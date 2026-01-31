@@ -1,0 +1,14 @@
+{
+  "meta": { "name": "SAC405", "alloy": "Sn95.5Ag4.0Cu0.5", "description": "Sans plomb riche en Argent" },
+  "safety": { "max_temp": 265, "max_slope": 3.0 },
+  "segments": [
+    { "type": "ramp", "end_temp": 140, "slope": 1.5, "note": "Ramp 1" },
+    { "type": "ramp", "end_temp": 170, "slope": 0.8, "note": "Soak Start" },
+    { "type": "hold", "duration_s": 80, "temp": 170, "note": "Flux Stabilize" },
+    { "type": "ramp", "end_temp": 217, "slope": 2.2, "note": "To Liquidus" },
+    { "type": "ramp", "end_temp": 250, "slope": 1.5, "note": "Reflow Spike" },
+    { "type": "hold", "duration_s": 25, "temp": 250, "note": "Peak Dwell" },
+    { "type": "ramp", "end_temp": 180, "slope": -3.5, "note": "Initial Cool" },
+    { "type": "ramp", "end_temp": 50, "slope": -1.5, "note": "Final Cool" }
+  ]
+}

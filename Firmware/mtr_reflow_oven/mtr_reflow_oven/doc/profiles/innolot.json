@@ -1,0 +1,15 @@
+{
+  "meta": { "name": "Innolot", "alloy": "Automotive Grade", "description": "Électronique haute fiabilité" },
+  "safety": { "max_temp": 260, "max_slope": 3.0 },
+  "segments": [
+    { "type": "ramp", "end_temp": 120, "slope": 1.0, "note": "Startup" },
+    { "type": "ramp", "end_temp": 150, "slope": 0.8, "note": "Soak Start" },
+    { "type": "hold", "duration_s": 120, "temp": 150, "note": "Long Activation" },
+    { "type": "ramp", "end_temp": 180, "slope": 0.5, "note": "Flux Deep Action" },
+    { "type": "ramp", "end_temp": 215, "slope": 2.0, "note": "To Liquidus" },
+    { "type": "ramp", "end_temp": 245, "slope": 1.2, "note": "Smooth Peak" },
+    { "type": "hold", "duration_s": 35, "temp": 245, "note": "Wetting Dwell" },
+    { "type": "ramp", "end_temp": 100, "slope": -2.8, "note": "Fast Cool" },
+    { "type": "ramp", "end_temp": 45, "slope": -1.0, "note": "Final Cool" }
+  ]
+}

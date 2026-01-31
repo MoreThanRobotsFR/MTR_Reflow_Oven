@@ -1,0 +1,14 @@
+{
+  "meta": { "name": "Sn99Cu0.7", "alloy": "Sn99.3Cu0.7", "description": "Économique sans plomb" },
+  "safety": { "max_temp": 270, "max_slope": 3.0 },
+  "segments": [
+    { "type": "ramp", "end_temp": 150, "slope": 1.2, "note": "Drying" },
+    { "type": "ramp", "end_temp": 185, "slope": 0.7, "note": "Soak" },
+    { "type": "hold", "duration_s": 90, "temp": 185, "note": "Equilibrium" },
+    { "type": "ramp", "end_temp": 227, "slope": 2.0, "note": "Liquidus" },
+    { "type": "ramp", "end_temp": 260, "slope": 1.5, "note": "Peak Spike" },
+    { "type": "hold", "duration_s": 20, "temp": 260, "note": "Reflow" },
+    { "type": "ramp", "end_temp": 150, "slope": -3.0, "note": "Cool 1" },
+    { "type": "ramp", "end_temp": 50, "slope": -1.2, "note": "Cool 2" }
+  ]
+}

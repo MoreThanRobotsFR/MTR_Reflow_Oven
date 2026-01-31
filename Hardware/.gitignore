@@ -1,0 +1,12 @@
+# KiCad
+*-backups/
+fp-info-cache
+*.kicad_prl
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.net
+*.zip
+
+# OS junk
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,43 @@
+# General
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.manifest
+venv/
+.venv/
+env/
+build/
+dist/
+*.spec
+
+# KiCad
+*-backups/
+fp-info-cache
+*.kicad_prl
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.net
+*.zip
+*.lock
+
+# Firmware / C++
+*.elf
+*.bin
+*.hex
+*.uf2
+*.map
+*.o
+*.d
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile

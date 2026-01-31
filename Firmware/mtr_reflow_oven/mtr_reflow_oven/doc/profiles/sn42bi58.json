@@ -1,0 +1,14 @@
+{
+  "meta": { "name": "Sn42Bi58", "alloy": "Sn42Bi58", "description": "Bismuth - Très basse température" },
+  "safety": { "max_temp": 190, "max_slope": 2.0 },
+  "segments": [
+    { "type": "ramp", "end_temp": 90, "slope": 0.8, "note": "Warm up" },
+    { "type": "hold", "duration_s": 40, "temp": 90, "note": "Drying" },
+    { "type": "ramp", "end_temp": 110, "slope": 0.5, "note": "Soak Start" },
+    { "type": "hold", "duration_s": 60, "temp": 110, "note": "Activation" },
+    { "type": "ramp", "end_temp": 138, "slope": 1.2, "note": "Approach" },
+    { "type": "ramp", "end_temp": 165, "slope": 1.0, "note": "Peak Spike" },
+    { "type": "hold", "duration_s": 30, "temp": 165, "note": "Wetting" },
+    { "type": "ramp", "end_temp": 40, "slope": -1.5, "note": "Cooling" }
+  ]
+}

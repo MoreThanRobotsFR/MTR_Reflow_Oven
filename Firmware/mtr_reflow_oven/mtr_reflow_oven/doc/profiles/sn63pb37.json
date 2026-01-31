@@ -1,0 +1,14 @@
+{
+  "meta": { "name": "Sn63Pb37", "alloy": "Sn63Pb37", "description": "Eutectique plomb classique" },
+  "safety": { "max_temp": 235, "max_slope": 2.5 },
+  "segments": [
+    { "type": "ramp", "end_temp": 100, "slope": 1.0, "note": "Initial Rise" },
+    { "type": "ramp", "end_temp": 125, "slope": 0.8, "note": "Preheat" },
+    { "type": "hold", "duration_s": 60, "temp": 125, "note": "Equilibrium" },
+    { "type": "ramp", "end_temp": 183, "slope": 1.5, "note": "To Liquidus" },
+    { "type": "ramp", "end_temp": 220, "slope": 2.0, "note": "Peak Rise" },
+    { "type": "hold", "duration_s": 20, "temp": 220, "note": "TAL" },
+    { "type": "ramp", "end_temp": 150, "slope": -2.0, "note": "Solidification" },
+    { "type": "ramp", "end_temp": 45, "slope": -1.2, "note": "Final Cool" }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "meta": { "name": "SAC305", "alloy": "Sn96.5Ag3.0Cu0.5", "description": "Standard industriel sans plomb" },
+  "safety": { "max_temp": 255, "max_slope": 3.0 },
+  "segments": [
+    { "type": "ramp", "end_temp": 100, "slope": 1.2, "note": "Drying" },
+    { "type": "ramp", "end_temp": 150, "slope": 1.0, "note": "Preheat Transition" },
+    { "type": "hold", "duration_s": 45, "temp": 150, "note": "Soak Start" },
+    { "type": "ramp", "end_temp": 180, "slope": 0.5, "note": "Flux Activation" },
+    { "type": "ramp", "end_temp": 217, "slope": 2.0, "note": "Liquidus Approach" },
+    { "type": "ramp", "end_temp": 240, "slope": 1.5, "note": "Peak Spike" },
+    { "type": "hold", "duration_s": 25, "temp": 240, "note": "Reflow Dwell" },
+    { "type": "ramp", "end_temp": 180, "slope": -3.0, "note": "Fast Cool" },
+    { "type": "ramp", "end_temp": 50, "slope": -1.5, "note": "Safe Cool" }
+  ]
+}

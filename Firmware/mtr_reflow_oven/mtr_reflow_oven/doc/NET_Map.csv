@@ -1,0 +1,30 @@
+GPIO Name,Function / Label,Signal Type,Detailed Device / Usage
+GPIO0,BNT1,Input (Interrupt),Button 1 on the control panel. Triggers an interrupt on state change.
+GPIO1,BNT2,Input (Interrupt),Button 2 on the control panel. Triggers an interrupt on state change.
+GPIO3,SD_CD,Input,"SD Card Detection (usually Pull-up, low when card is inserted)."
+GPIO4,SDA,I2C Data,I2C bus data line. Connected to MCP9600T temperature sensors (Sensor 1 and 2).
+GPIO5,SCL,I2C Clock,I2C bus clock line. Connected to MCP9600T temperature sensors (Sensor 1 and 2).
+GPIO6,rotary_DT,Input (Interrupt),Rotary Encoder D (Data) phase. Used to determine the direction of rotation.
+GPIO7,rotary_CLK,Input (Interrupt),Rotary Encoder CLK (Clock) phase. Used to generate counting pulses.
+GPIO8,rotary_BNT,Input (Interrupt),Push button integrated into the rotary encoder.
+GPIO9,WS_LED,Output (Digital),Data line for controlling addressable LEDs of type WS2812B (2 Status/Indication LEDs).
+GPIO10,ALT4_TEMP1,Input (Alert),Alert pin 4 of Temperature Sensor 1 (MCP9600T). May indicate a critical threshold overshoot.
+GPIO11,ALT3_TEMP1,Input (Alert),Alert pin 3 of Temperature Sensor 1 (MCP9600T).
+GPIO12,ALT2_TEMP1,Input (Alert),Alert pin 2 of Temperature Sensor 1 (MCP9600T).
+GPIO13,ALT1_TEMP1,Input (Alert),Alert pin 1 of Temperature Sensor 1 (MCP9600T). Basic temperature threshold alert.
+GPIO14,ALT4_TEMP2,Input (Alert),Alert pin 4 of Temperature Sensor 2 (MCP9600T).
+GPIO15,ALT3_TEMP2,Input (Alert),Alert pin 3 of Temperature Sensor 2 (MCP9600T).
+GPIO16,ALT2_TEMP2,Input (Alert),Alert pin 2 of Temperature Sensor 2 (MCP9600T).
+GPIO17,ALT1_TEMP2,Input (Alert),Alert pin 1 of Temperature Sensor 2 (MCP9600T). Basic temperature threshold alert.
+GPIO18,SPI_SCK,Output (SPI Clock),Clock for the SPI bus (used by the SD card and the screen).
+GPIO19,SPI_MOSI,Output (SPI Data),"Master Out, Slave In. Data sent by the microcontroller to the SD card/screen."
+GPIO20,SPI_MISO,Input (SPI Data),"Master In, Slave Out. Data received by the microcontroller from the SD card."
+GPIO21,SCREEN_CS,Output (Chip Select),Chip Select for the LCD/OLED screen via the SPI bus.
+GPIO22,SD_DAT3/CS,Output (Chip Select),"Chip Select for accessing the SD card (also uses the DAT3 line in 4-bit SD mode, but here as CS)."
+GPIO23,SCREEN_BL,Output (PWM),Control of the screen backlight brightness (Pulse Width Modulation).
+GPIO24,SCREEN_RST,Output (Digital),Reset signal for the screen.
+GPIO25,SCREEN_DC,Output (Digital),Data/Command (D/C) pin for the screen (indicates whether the data sent is commands or pixels).
+GPIO26_ADC0,EN_HEAT1,Output (PWM),Activation of Heating Circuit 1 (via a power driver/relay). Power control via PWM.
+GPIO27_ADC1,EN_HEAT2,Output (PWM),Activation of Heating Circuit 2 (via a power driver/relay). Power control via PWM.
+GPIO28_ADC2,BUZZER,Output (PWM/Digital),Output for the sounder/buzzer. Can be used in PWM to generate various tones.
+GPIO29_ADC3,1-wire_temp,Input/Output (Bus),1-wire communication bus. Generally used for DS18B20 temperature probes.

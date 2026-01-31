@@ -1,0 +1,14 @@
+{
+  "meta": { "name": "Sn62Pb36Ag2", "alloy": "Sn62Pb36Ag2", "description": "Argent/Plomb haute précision" },
+  "safety": { "max_temp": 230, "max_slope": 2.5 },
+  "segments": [
+    { "type": "ramp", "end_temp": 120, "slope": 1.0, "note": "Preheat" },
+    { "type": "ramp", "end_temp": 150, "slope": 0.5, "note": "Soak Entry" },
+    { "type": "hold", "duration_s": 70, "temp": 150, "note": "Flux Activation" },
+    { "type": "ramp", "end_temp": 179, "slope": 1.8, "note": "Liquidus" },
+    { "type": "ramp", "end_temp": 215, "slope": 1.5, "note": "Reflow Spike" },
+    { "type": "hold", "duration_s": 25, "temp": 215, "note": "TAL" },
+    { "type": "ramp", "end_temp": 100, "slope": -2.5, "note": "Fast Cool" },
+    { "type": "ramp", "end_temp": 50, "slope": -1.0, "note": "Handling Cool" }
+  ]
+}

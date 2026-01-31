@@ -1,0 +1,10 @@
+# Draw.io / Office temporary files
+.$*
+~$*
+*.bkp
+*.dtmp
+*.tmp
+
+# OS junk
+Thumbs.db
+Desktop.ini

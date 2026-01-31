@@ -1,0 +1,18 @@
+# Build directory
+build/
+
+# IDE / Editor
+.vscode/
+*.code-workspace
+
+# Component / Library artifacts (if any generated)
+*.a
+*.o
+
+# Output Binaries / Maps
+*.elf
+*.bin
+*.hex
+*.uf2
+*.map
+*.dis

@@ -1,0 +1,14 @@
+{
+  "meta": { "name": "BiAg", "alloy": "Sn42Bi57.6Ag0.4", "description": "Basse T° haute fiabilité" },
+  "safety": { "max_temp": 195, "max_slope": 2.0 },
+  "segments": [
+    { "type": "ramp", "end_temp": 100, "slope": 1.0, "note": "Soft Start" },
+    { "type": "hold", "duration_s": 45, "temp": 100, "note": "Drying" },
+    { "type": "ramp", "end_temp": 125, "slope": 0.6, "note": "Soak" },
+    { "type": "hold", "duration_s": 60, "temp": 125, "note": "Activation" },
+    { "type": "ramp", "end_temp": 138, "slope": 1.5, "note": "Melting" },
+    { "type": "ramp", "end_temp": 175, "slope": 1.2, "note": "Reflow" },
+    { "type": "hold", "duration_s": 35, "temp": 175, "note": "Peak" },
+    { "type": "ramp", "end_temp": 40, "slope": -1.8, "note": "Cooling" }
+  ]
+}
